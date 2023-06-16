@@ -6,4 +6,6 @@
 
 * {
     font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    scroll-behavior: smooth;
 }

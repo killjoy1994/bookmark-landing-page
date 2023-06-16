@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   content: [
     "./index.html",
@@ -15,7 +17,11 @@ export default {
           grayishBlue: 'hsl(229, 8%, 60%)',
           veryDarkBlue: 'hsl(229, 31%, 21%)',
         }
-      }
+      },
+      screens: {
+        'xs': '481px',
+        ...defaultTheme.screens,
+      },
     },
   },
   plugins: [],

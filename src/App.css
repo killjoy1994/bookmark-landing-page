@@ -1,0 +1,11 @@
+/* .image-wrapper::before {
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: 40%;
+    height: 400px;
+    width: 500px;
+    background-color: blue;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+} */
