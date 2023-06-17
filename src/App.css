@@ -9,3 +9,20 @@
     border-top-left-radius: 100%;
     border-bottom-left-radius: 100%;
 } */
+
+.tab-active {
+    position: relative;
+}
+
+.tab-active::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    border-bottom: 2px solid red;
+    width: 75%;
+    left: 12.5%;
+}
+
+.bg-dots {
+    background-image: url('./assets//images/bg-dots.svg');
+}

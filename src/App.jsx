@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import HeroImage from "./assets/images/illustration-hero.svg";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import Extension from "./components/Extension";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Extension />
     </div>
   );
 }

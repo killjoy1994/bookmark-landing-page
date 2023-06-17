@@ -9,7 +9,7 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className="flex items-center justify-between sm:container p-5 sm:p-0 sm:pt-10 mx-auto">
+    <nav className="flex items-center justify-between sm:container p-7 sm:p-0 sm:pt-10 mx-auto">
       <div className={twMerge("h-6 sm:h-8", toggle ? 'hidden' : 'visible')} >
         <img className="h-full w-full" src={logoBookmark} alt="" />
       </div>
