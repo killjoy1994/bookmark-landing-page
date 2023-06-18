@@ -15,7 +15,7 @@ export default function Extension() {
       <div className="flex flex-col sm:mt-20 sm:flex-row sm:justify-center sm:gap-x-8 gap-y-7">
         {data.extensions.map((data) => {     
           return (
-            <div key={data.id} className={"extensions-card py-8 sm:max-w-[300px] sm:px-6 shadow-lg"} >
+            <div key={data.id} className={"extensions-card py-8 sm:max-w-[400px] sm:px-6 shadow-lg"} >
               <img className="m-auto" src={data.imgSrc} alt="" />
               <div className="px-6 py-2">
                 <p className="text-neutral-veryDarkBlue text-2xl text-center font-medium my-1">{data.title}</p>

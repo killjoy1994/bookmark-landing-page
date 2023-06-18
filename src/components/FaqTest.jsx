@@ -61,6 +61,7 @@ export default function FaqTest() {
           </div>
         </div>
       </div>
+      <button className="mt-12 px-5 py-2 bg-primary-softBlue text-slate-50 mx-auto block rounded">More Info</button>
     </div>
   );
 }

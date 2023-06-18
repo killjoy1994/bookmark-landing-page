@@ -7,15 +7,21 @@ import Features from "./components/Features";
 import Extension from "./components/Extension";
 import Faq from "./components/FAQ";
 import FaqTest from "./components/FaqTest";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-white lg:px-20">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Extension />
-      <FaqTest />
+    <div className="bg-white">
+      <div className="lg:px-16">
+        <Navbar />
+        <Hero />
+        <Features />
+        <Extension />
+        <FaqTest />
+      </div>
+      <Contact />
+      <Footer />
     </div>
   );
 }

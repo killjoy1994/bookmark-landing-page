@@ -25,12 +25,12 @@ export default function Features() {
           </li>
         </ul>
       </div>
-      <div className="grid sm:grid-cols-2 sm:flex-row sm:container mx-auto mt-11 sm:gap-x-8 gap-y-20">
-        <div className="sm:order-2">
+      <div className="grid sm:grid-cols-2 sm:justify-between sm:container mx-auto mt-11 sm:gap-x-8 gap-y-20">
+        <div className="">
           <img className="h-full w-full" src={Tab1Image} alt="" />
           {/* <div className="absolute bg-blue-700 h-[280px] rounded-l-full w-[400px]"></div> */}
         </div>
-        <div className="text-center sm:text-start px-3 sm:px-0 sm:place-self-center">
+        <div className="text-center sm:pl-[15px] lg:pl-[70px] sm:text-start px-3 sm:px-0 sm:place-self-center">
           <h2 className=" text-neutral-veryDarkBlue text-3xl sm:text-2xl sm:mb-3 lg:text-4xl font-medium mb-5">Bookmark in one click</h2>
           <p className="font-light text-neutral-grayishBlue sm:text-base sm:mb-3 lg:text-xl mb-5">
             Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
