@@ -26,3 +26,13 @@
 .bg-dots {
     background-image: url('./assets//images/bg-dots.svg');
 }
+
+.extensions-card:nth-child(2) {
+    position: relative;
+    top: 30px;
+}
+
+.extensions-card:nth-child(3) {
+    position: relative;
+    top: 60px;
+}
