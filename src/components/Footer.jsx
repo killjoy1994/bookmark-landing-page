@@ -5,8 +5,8 @@ import logoFacebook from "../assets/images/icon-facebook.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-veryDarkBlue" >
-      <div className="flex sm:container mx-auto py-10 sm:py-7 sm:px-7 flex-col sm:flex-row sm:justify-between items-center gap-8">
+    <footer className="bg-neutral-veryDarkBlue lg:px-16" >
+      <div className="flex sm:container mx-auto py-10 sm:py-7  sm:px-7 flex-col sm:flex-row sm:justify-between items-center gap-8">
         <div className="flex flex-col sm:gap-x-10 items-center gap-y-8 sm:flex-row ">
           <div className="h-6">
             <img className="h-full text-slate-50" src={logoBookmark} alt="" />

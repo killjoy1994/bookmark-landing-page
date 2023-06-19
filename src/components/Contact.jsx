@@ -7,8 +7,8 @@ export default function Contact() {
       <h2 className="font-medium text-xl text-center px-7">Stay up-to-date with what we’re doing</h2>
       <form action="" className="px-7 w-full sm:max-w-[550px]" >
         <div className="flex flex-col gap-y-3 sm:flex-row sm:gap-x-5  sm:justify-center">
-          <input type="text" placeholder="Enter your email address" className="input bg-slate-50 w-full rounded" />
-          <button className="bg-primary-softRed w-full rounded sm:max-w-[200px] py-3" type="submit">Contact Us</button>
+          <input type="text" placeholder="Enter your email address" className="input bg-slate-50 text-slate-800 w-full rounded" />
+          <button className="bg-primary-softRed w-full rounded sm:max-w-[180px] py-3" type="submit">Contact Us</button>
         </div>
       </form>
     </div>
