@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-white min-w-[300px]">
       <div className="lg:px-16">
         <Navbar />
         <Hero />

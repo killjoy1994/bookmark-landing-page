@@ -4,11 +4,10 @@ import HeroImage from "../assets/images/illustration-hero.svg";
 export default function Hero() {
   return (
     <section className="grid px-7 sm:grid-cols-2 sm:flex-row sm:container mx-auto mt-11 gap-y-3">
-      <div className="sm:order-2">
-        <img className="" src={HeroImage} alt="" />
-        {/* <div className="absolute bg-blue-700 h-[280px] rounded-l-full w-[400px]"></div> */}
+      <div className="sm:order-2 relative hero-image-shape">
+        <img className="relative z-10" src={HeroImage} alt="" />
       </div>
-      <div className="text-center sm:text-start sm:px-0 sm:place-self-center">
+      <div className="text-center mt-14 sm:mt-0 sm:text-start sm:px-0 sm:place-self-center">
         <h1 className=" text-neutral-veryDarkBlue text-3xl sm:text-4xl sm:mb-3 lg:text-5xl font-medium mb-5">A Simple Bookmark Manager</h1>
         <p className="font-light text-neutral-grayishBlue sm:text-base sm:mb-3 lg:text-xl mb-5">
           A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.

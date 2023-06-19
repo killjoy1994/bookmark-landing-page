@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Tab1Image from "../assets/images/illustration-features-tab-1.svg";
 import { twMerge } from "tailwind-merge";
 import { data } from "../data";
 
 export default function Features() {
   const [activeTab, setActiveTab] = useState(1);
+  const [selectedTab, setSelectedTab] = useState(activeTab);
+
+  useEffect(() => {
+    const selected = data.features.find((data) => {
+      if (data.id == activeTab) {
+        return data;
+      }
+    });
+    setSelectedTab(selected);
+  }, [activeTab]);
 
   return (
     <div className="mt-32 px-7 sm:container sm:mx-auto">
@@ -49,27 +59,21 @@ export default function Features() {
           </li>
         </ul>
       </div>
-      <div className="grid sm:grid-cols-2 sm:justify-between sm:container mx-auto mt-11 sm:gap-x-8 gap-y-20">
-        {data.features
-          .filter((data) => {
-            if (data.id == activeTab) {
-              return data;
-            }
-          })
-          .map((data) => {
-            return (
-              <>
-                <img className="h-full w-full" src={data.img} alt="" />
-                <div className="text-center sm:pl-[15px] lg:pl-[70px] sm:text-start px-3 sm:px-0 sm:place-self-center">
-                  <h2 className=" text-neutral-veryDarkBlue text-3xl sm:text-2xl sm:mb-3 lg:text-4xl font-medium mb-5">{data.title}</h2>
-                  <p className="font-light text-neutral-grayishBlue sm:text-base sm:mb-3 lg:text-xl mb-5">{data.desc}</p>
-                  <div className="flex justify-center sm:justify-start gap-x-4">
-                    <button className="hidden sm:inline-block bg-primary-softBlue sm:text-sm px-4 py-2 rounded-md font-medium text-slate-50">More Info</button>
-                  </div>
-                </div>
-              </>
-            );
-          })}
+      <div className="grid  sm:grid-cols-2 sm:justify-between sm:container mx-auto mt-11 sm:gap-x-8 gap-y-20">
+        {
+          <>
+            <div className="feature-image-shape relative z-0">
+              <img className="relative z-10 h-full w-full lg:object-fill" src={selectedTab.img} alt="" />
+            </div>
+            <div className="text-center mt-16 sm:mt-0 sm:pl-[15px] lg:pl-[70px] sm:text-start px-3 sm:px-0 sm:place-self-center">
+              <h2 className=" text-neutral-veryDarkBlue text-3xl sm:text-2xl sm:mb-3 lg:text-4xl font-medium mb-5">{selectedTab.title}</h2>
+              <p className="font-light text-neutral-grayishBlue sm:text-base sm:mb-3 lg:text-xl mb-5">{selectedTab.desc}</p>
+              <div className="flex justify-center sm:justify-start gap-x-4">
+                <button className="hidden sm:inline-block bg-primary-softBlue sm:text-sm px-4 py-2 rounded-md font-medium text-slate-50">More Info</button>
+              </div>
+            </div>
+          </>
+        }
       </div>
     </div>
   );
