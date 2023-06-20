@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
-import isEmail from "validator/lib/isemail";
+
 
 export default function Contact() {
   const [email, setEmail] = useState("");
