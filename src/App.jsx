@@ -5,7 +5,6 @@ import HeroImage from "./assets/images/illustration-hero.svg";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Extension from "./components/Extension";
-import Faq from "./components/FAQ";
 import FaqTest from "./components/FaqTest";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
