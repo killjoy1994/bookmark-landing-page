@@ -13,12 +13,12 @@ export default function Navbar() {
       <div className={twMerge("h-6 sm:h-8", toggle ? 'hidden' : 'visible')} >
         <img className="h-full w-full" src={logoBookmark} alt="" />
       </div>
-      <ul className="hidden gap-x-3 sm:flex sm:gap-x-6 xl:gap-x-12 justify-between items-center text-xs sm:text-base lg:text-lg text-slate-700">
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Contact</li>
+      <ul className="hidden gap-x-3  sm:flex sm:gap-x-6 xl:gap-x-12 justify-between items-center text-xs sm:text-base lg:text-lg text-slate-700">
+        <li className="hover:text-primary-softRed">Features</li>
+        <li className="hover:text-primary-softRed">Pricing</li>
+        <li className="hover:text-primary-softRed">Contact</li>
         <li>
-          <button className="px-8 py-2 bg-primary-softRed text-sm font-normal rounded-md text-slate-50">LOGIN</button>
+          <button className="w-[100px] h-[40px] bg-primary-softRed text-sm font-normal rounded-md hover:text-primary-softRed hover:bg-white hover:border-2 box-border hover:border-primary-softRed text-slate-50">LOGIN</button>
         </li>
       </ul>
       <button className={twMerge("inline-block sm:hidden h-5", toggle ? 'hidden' : 'visible')} onClick={() => setToggle(true)} >

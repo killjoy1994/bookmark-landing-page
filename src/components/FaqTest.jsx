@@ -14,7 +14,7 @@ export default function FaqTest() {
         <div className="collapse collapse-arrow border-b-2 rounded-none border-s-slate-400">
           <input type="checkbox" />
           <div className="collapse-title text-lg text-slate-700 font-medium">
-            <p>What is Bookmark?</p>
+            <p className="faq-hover">What is Bookmark?</p>
           </div>
           <div className="collapse-content">
             <p>
@@ -26,7 +26,7 @@ export default function FaqTest() {
         <div className="collapse collapse-arrow border-b-2 rounded-none border-s-slate-400">
           <input type="checkbox" />
           <div className="collapse-title text-lg text-slate-700 font-medium">
-            <p>How can I request a new browser?</p>
+            <p className="hover:text-primary-softRed">How can I request a new browser?</p>
           </div>
           <div className="collapse-content">
             <p>

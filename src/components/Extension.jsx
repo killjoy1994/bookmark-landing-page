@@ -22,7 +22,7 @@ export default function Extension() {
                 <p className="font-light text-center text-neutral-grayishBlue">{data.desc}</p>
               </div>
               <div className="bg-dots w-full h-1 my-5"></div>
-              <button className="block m-auto bg-blue-500 rounded-md px-8 py-3 text-slate-50 font-medium">Add & Install Extension</button>
+              <button className="block m-auto bg-blue-500 rounded-md px-8 py-3 border-2 hover:border-blue-500 hover:border-2 hover:bg-white hover:text-blue-500 text-slate-50 font-medium">Add & Install Extension</button>
             </div>
           );
         })}
